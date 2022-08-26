@@ -1,0 +1,26 @@
+<HTML>
+    <HEAD>
+        <TITLE>Jenna's Server</TITLE>
+        <LINK rel="stylesheet" href="/styles.css">
+    </HEAD>
+    <BODY style="width: 60%;">
+			<img style="width: 100%; object-fit: contain;" src="/images/SylveonBannerWeb.svg">
+            <h1>Jenna's Server Homepage</h1>
+            <p>All these pages are served to you dynamically by some C code I wrote and made 
+                available below. The page request is recieved via socket, parsed for it's type
+                and location, and if possible the correct page / file-needed-for-page is broken 
+                into 4kB chucks before being written back to you and the socket closed.
+            </p>
+			<a href="/test1.html">Test Page 1</a><br>
+			<a href="/testing/test2.html">Test Page 2</a><br>
+			<a href="/testimg.html">Small Image Test Page</a><br>
+			<a href="/testbigimg.html">Big Image Test Page</a><br>
+			<a href="/inlinejs.html">Demo Inline JavaScript</a><br>
+			<a href="/externaljs.html">Demo External JavaScript</a><br>
+			<br>
+			<a href="/err404.html">Error 404 Page</a><br>
+			<a href="/err500.html">Error 500 Page</a><br>
+            <br>
+            <a href="/Webserver.zip">Download source files and example pages here</a>
+		</BODY>
+</HTML>

@@ -1,0 +1,20 @@
+Jenna P Whilden (jpwolf101@gmail.com) 11-22-2021
+
+This program is a web server with a configurable ip and port at start up. It
+serves HTML, CSS, JS, and common image files via GET requests, sufficient to
+be accessed by most browsers. The program must be provided with a root folder
+containing an index.html, err404.html, and err505.html at minimum. The webserver
+will not access files above the root folder, so all pages should be stored in it.
+
+IPv4 and IPv6 addresses are both acceptable, and should one not be given, it
+will default to an available IPv4 address (127.0.0.1, 127.0.1.1, etc.).
+
+Ports are accepted in the standard range, and if one is not specified, the
+server will automatically be assigned a random open port.
+
+Verbose output additionally indicates how much data each client connection is
+reading and sending in each event loop, and includes the file descriptor of the
+client's socket for debugging.
+
+The makefile provided will build the web server from web-server.c and 
+web-server.h, and will name the program with the current OS and processor.
